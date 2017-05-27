@@ -1,0 +1,16 @@
+<div id="container">
+  <% flash.each do |key, value| %>
+    <div id="error" class="<%= key %>"><center><%= value %></center></div>
+  <% end %>
+  <h1>Log In</h1>
+  <form action="/login" method="post">
+    <input type='hidden' name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button>Log In</button>
+  </form>
+  
+  <h4>New? <a href="/signup">Click Here!</a></h4>
+</div>

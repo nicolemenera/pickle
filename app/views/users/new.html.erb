@@ -1,0 +1,26 @@
+<div class="container_reg">
+  <% flash.each do |key, value| %>
+    <div class="<%= key %>"><center><%= value %></center></div>
+  <% end %>
+  <h1>Register</h1>
+  <form action="/create" method="post">
+    <input type='hidden' name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="user[first_name]">
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="user[last_name]">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="user[email]">
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="user[dob]">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="user[username]">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="user[password]">
+    <label for="password">Password Confirmation:</label>
+    <input type="password" id="password_confirmation" name="user[password_confirmation]">
+    <button>Register</button>
+  </form>
+  
+  <a href="/">I already have an account</a>
+</div>

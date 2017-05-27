@@ -1,0 +1,35 @@
+// Place all the styles related to the Static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  outline-style: none;
+}
+
+#container {
+  padding: 200px;
+  border: 30px solid black;
+  background-image: url("bwstormtrooper.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#error {
+  color: darkred;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  margin: 50px;
+}
